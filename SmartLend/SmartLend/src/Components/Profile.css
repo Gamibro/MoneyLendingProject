@@ -1,0 +1,69 @@
+.profile-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.profile-page h1 {
+  color: #4facfe;
+  margin-bottom: 5px;
+}
+
+.profile-page p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.profile-form {
+  background: #f0f4ff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+}
+
+.profile-form h2 {
+  color: #00f2fe;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.btn-save {
+  background: linear-gradient(120deg,#4facfe,#00f2fe);
+  color: white;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.btn-save:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .profile-form {
+    padding: 20px;
+  }
+}

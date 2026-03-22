@@ -1,0 +1,109 @@
+.admin-dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.admin-dashboard h1 {
+  color: #4facfe;
+  margin-bottom: 5px;
+}
+
+.admin-dashboard p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Stats Cards */
+.admin-stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.admin-card {
+  flex: 1;
+  min-width: 200px;
+  background: #f0f4ff;
+  padding: 25px;
+  /* border-radius: 20px; */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.admin-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Quick Links Buttons */
+.admin-quicklinks {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.btn-admin {
+  background: linear-gradient(120deg,#4facfe,#00f2fe);
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.btn-admin:hover {
+  transform: scale(1.05);
+}
+
+/* Recent Users Table */
+.recent-users table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.recent-users th, .recent-users td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* .recent-users th {
+  background: #4facfe;
+  color: white;
+  border-radius: 5px;
+} */
+
+.status.active {
+  color: green;
+  font-weight: bold;
+}
+
+.status.pending {
+  color: orange;
+  font-weight: bold;
+}
+
+.status.inactive {
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .admin-stats {
+    flex-direction: column;
+  }
+
+  .admin-quicklinks {
+    flex-direction: column;
+  }
+}

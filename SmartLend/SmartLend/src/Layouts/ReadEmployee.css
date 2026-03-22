@@ -1,0 +1,138 @@
+/* Background & Card */
+.re-bg {
+  padding: 20px;
+  background-color: #f4f7fc;
+  min-height: 100vh;
+}
+
+.re-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+.re-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.re-head input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 200px;
+  transition: border-color 0.2s;
+}
+
+.re-head input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Table */
+.re-table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+  background-color: #f0f4f8;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Action buttons */
+.re-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s;
+}
+
+.re-edit {
+  background-color: #007bff;
+  color: white;
+  margin-right: 5px;
+}
+
+.re-edit:hover {
+  background-color: #0056b3;
+}
+
+.re-del {
+  background-color: #dc3545;
+  color: white;
+}
+
+.re-del:hover {
+  background-color: #a71d2a;
+}
+
+/* Loader */
+.re-loader {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  padding: 40px 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  table {
+    min-width: 700px;
+  }
+}
+
+@media (max-width: 650px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  th {
+    display: none;
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-bottom: none;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #555;
+  }
+
+  .re-btn {
+    width: 48%;
+    margin-top: 5px;
+  }
+}

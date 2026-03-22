@@ -1,0 +1,96 @@
+.about-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Hero Section */
+.about-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  color: #2f2479;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #161717;
+}
+
+.hero-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Mission & Vision */
+.mission-vision {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.mission-vision .card {
+  flex: 1;
+  min-width: 250px;
+  background: #f0f4ff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.mission-vision .card h2 {
+  color: #2e1179;
+  margin-bottom: 10px;
+}
+
+.mission-vision .card p {
+  color: #314c5e;
+  font-size: 1rem;
+}
+
+/* Team / Info Section */
+.team-info {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team-info h2 {
+  font-size: 2rem;
+  color: #14222e;
+  margin-bottom: 15px;
+}
+
+.team-info p {
+  font-size: 1.1rem;
+  color: #233f56e4;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .about-hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .mission-vision {
+    flex-direction: column;
+  }
+}
